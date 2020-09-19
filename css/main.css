@@ -14,6 +14,23 @@ html, body {
     height: 100%;
 }
 
+.row{
+    min-height: 100%;
+}
+
+.margin-top{
+    margin-top: 15%;
+}
+
 .card{
     margin: 5%;
+}
+
+.patrocinador_img{
+    transition: filter 0.5s;
+    filter:  grayscale(100%);
+}
+
+.patrocinador_img:hover{
+    filter: grayscale(0%);
 }
