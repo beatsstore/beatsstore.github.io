@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>< nombre ></title>
+    <title>Cooking Beats</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -12,8 +12,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="vendor/component.js"></script>
+    <script src="vendor/main.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body id="root">
     <div class="fill">
         <div class="container-fluid">
             <div class="row margin-top">
@@ -21,7 +26,7 @@
     
                 </div>
                 <div class="col-md ">
-                    <h1 class="text-center"> < nombre > </h1>
+                    <h1 class="text-center"> Cooking Beats </h1>
                     <p>¿Donde vendo mis instrumentales?¿Hay alguna aplicación donde hacerlo?
                         ¿Salgo ganando si uso alguno de estos sistemas? 
                         Estas y muchas otras preguntas se escuchan en los rincones donde se reúnen los músicos y productores. </p>
@@ -31,20 +36,23 @@
                         tus samples subidos a soundcloud.
                     </p>
                     <p>
-                        Somos < nombre > 
+                        Somos <b>Cooking Beats</b> 
                         un emprendimiento para ofrecer una solución a estos problemas, 
                         para poder ayudar a quienes están comenzando o quienes quieren darse a conocer, y por qué no hacer amigos.
+                    </p>
+                    <p class="text-center">
+                        <a href="sobre.html" class="btn btn-primary align-middle">Ver Mas</a>
                     </p>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="apollanos">
             <div class="row margin-top">
                 <div class="col-sm">
                     <h1 class="text-center">Apollanos</h1>
                     <p>
-                        Confiamos en que nos apoyen bien haciendo comentarios 
-                        de que les gustaría que tuviese el sistema o bien haciendo un aporte a cambio de algunos beneficios. 
+                        Confiamos en que nos apoyen,  bien haciendo comentarios 
+                        de que les gustaría que tuviese el sistema, o bien haciendo un aporte a cambio de algunos beneficios. 
                     </p>
                     <p>
                         Alguno de estos beneficios pueden ser beats, samples, o alguna ventaja extra en la futura plataforma.
@@ -55,7 +63,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid align-middle">
+        <div class="container-fluid align-middle" id="beneficios">
             <div class="row">
                 <div class="col-sm">
                     <h1 class="text-center">Beneficios</h1>
@@ -63,55 +71,39 @@
             </div>
             <div class="row">
                 <div class="col-sm card-group">
-                    <div class="card border">
+                    <div class="card mb-4 shadow-sm">
                         <div class="card-header">
-                            Beat
+                          <h4 class="my-0 font-weight-normal text-center">Beat</h4>
                         </div>
-                        <div class="card-body text-dark">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Elección de un beat:</li>
-                                <li class="list-group-item">Licencia de uso, con retribución al autor: divisa ORO</li>
-                                <li class="list-group-item">Mención en agradecimientos</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <a type="button" class="btn btn-success btn-block">Acceder</a>
+                        <div class="card-body">
+                          <h1 class="card-title pricing-card-title text-center">$150</h1>
+                          <ul class="list-unstyled mt-3 mb-4">
+                            <li>Elección de un <b>Beat</b></li>
+                            <li>Licencia de uso, con retribución al autor: <b>DiVisa ORO</b></li>
+                            <li>Mención en agradecimientos</li>
+                          </ul>
+                          <button type="button" class="btn btn-lg btn-block btn-outline-primary">Acceder</button>
                         </div>
                     </div>
-                    <div class="card border">
+
+                    <div class="card mb-4 shadow-sm border">
                         <div class="card-header">
-                            Sample
+                          <h4 class="my-0 font-weight-normal text-center">Sample Pack</h4>
                         </div>
-                        <div class="card-body text-dark">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Elección de un sample pack:</li>
-                                <li class="list-group-item">Licencia de uso, con retribución al autor: divisa ORO</li>
-                                <li class="list-group-item">Mención en agradecimientos</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <a type="button" class="btn btn-success btn-block">Acceder</a>
-                        </div>
-                    </div>
-                    <div class="card border">
-                        <div class="card-header">
-                            Premium
-                        </div>
-                        <div class="card-body text-dark">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Premium como productor y usuario normal por un año, desde la fecha de creación de la cuenta: (ventajas a definir) <a href="">Ver mas</a></li>
-                                <li class="list-group-item">Seguimiento del proyecto por correo</li>
-                                <li class="list-group-item">Mención en agradecimientos</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <a type="button" class="btn btn-success btn-block">Acceder</a>
+                        <div class="card-body">
+                          <h1 class="card-title pricing-card-title text-center">$1000</h1>
+                          <ul class="list-unstyled mt-3 mb-4">
+                            <li>Elección de un <b>Sample Pack</b></li>
+                            <li>Licencia de uso, con retribución al autor: <b>DiVisa ORO</b></li>
+                            <li>Mención en agradecimientos</li>
+                          </ul>
+                          <button type="button" class="btn btn-lg btn-block btn-outline-primary">Acceder</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="patrocinadores">
             <div class="row">
                 <h1 class="text-center">Patrocinadores</h1>
             </div>
@@ -136,13 +128,6 @@
                     </div>
                 </div>
             </div> 
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
         </div>
     </div>
 </body>
