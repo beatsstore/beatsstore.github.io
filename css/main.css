@@ -19,18 +19,28 @@ html, body {
 }
 
 .margin-top{
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .card{
     margin: 5%;
 }
 
-.patrocinador_img{
+.img-filter {
     transition: filter 0.5s;
     filter:  grayscale(100%);
 }
 
-.patrocinador_img:hover{
+.img-filter:hover{
     filter: grayscale(0%);
+}
+
+.patrocinadores{
+    width: 30%;
+}
+
+@media (max-width: 768px){
+    .img-filter{
+        filter: grayscale(0%);
+    }
 }
