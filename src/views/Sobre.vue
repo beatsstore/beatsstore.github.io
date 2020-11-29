@@ -50,16 +50,20 @@
             si es lo que te conviene a ti. Es importante para nosotros esta parte ya que como queremos ayudar lo antes posibles a productores
             , cantantes y diseñadores de audio, tenemos que crecer rápidamente.
           </p>
-        </div>
+      </div>
+    
+    <Footer></Footer>
   </div>
 </template>
 <script>
 import Menu from "../components/Menu.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "Sobre",
   components:{
-    Menu
+    Menu,
+    Footer
   }
 }
 </script>

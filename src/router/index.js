@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Sobre from "../views/Sobre.vue";
 import DivisaOro from "../views/DivisaOro.vue";
+import FinalizarCompra from "../views/FinalizarCompra.vue";
 
 Vue.use(VueRouter);
 
@@ -20,6 +21,11 @@ const routes = [{
         path: "/divisaoro",
         name: "DivisaOro",
         component: DivisaOro
+    },
+    {
+        path: "/finalizarcompra",
+        name: "FinalizarCompra",
+        component: FinalizarCompra
     }
 ];
 

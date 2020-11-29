@@ -1,6 +1,5 @@
 <template>
-  <div class="home">
-    <main class="fill flex-shrink-0">
+    <main>
         <div class="container-fluid" id="cookingbeat">
           <div class="row margin-top">
               <div class="col-sm">
@@ -57,28 +56,67 @@
         <div class="container-fluid" id="constribucion">
           <div class="row margin-top">
             <div class="col-sm">
+              <h1 class="text-center">Constribucion</h1>
+              <ul class="nav justify-content-center text-center" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#divisa" role="tab" aria-controls="divisa"
+                    aria-selected="true">
+                      <img src="divisa.jpeg" alt="" width="100px" class="rounded-circle">
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="" data-toggle="tab" href="#franco" role="tab" aria-controls="franco" aria-selected="false">
+                      <img src="francoPerfil.jpg" alt="" width="100px" class="rounded-circle">
+                  </a>
+                </li>
+              </ul>
+              <hr>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="divisa" role="tabpanel" aria-labelledby="franco-tab">
+                  <div class="row">
+                    <p>Soy DiVisa un productor musical y beatmakers argentino, 
+                trabajo con géneros de música urbanos, espero que nos apolles :)</p>
+                    <Reproductor v-bind:data="data"></Reproductor>
+                  </div>
+                </div>
                 
-            </div>
-            <div class="col-sm">
-                <h1 class="text-center">Constribucion</h1>
-                <p>
-                    Puede contribuir bien haciendo comentarios 
-                    de que te gustaría que tuviese el sistema, o bien haciendo un aporte a cambio de algunos beneficios. 
-                </p>
-                <p>
-                    Alguno de estos beneficios pueden ser beats, samples, o alguna ventaja extra en la futura plataforma.
-                </p>
+                <div class="tab-pane fade" id="franco" role="tabpanel" aria-labelledby="franco-tab">Food truck fixie
+                  locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit,
+                  blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.
+                  Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum
+                  PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS
+                  salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit,
+                  sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester
+                  stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</div>
+                <!--
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Etsy mixtape
+                  wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack
+                  lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard
+                  locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify
+                  squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie
+                  etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog
+                  stumptown. Pitchfork sustainable tofu synth chambray yr.</div>
+                  -->
+              </div>
             </div>
           </div>
         </div>
+        <Footer></Footer>
     </main>
-  </div>
 </template>
 
 <script>
+import Footer from "@/components/Footer.vue";
 // @ is an alias to /src
-
+import Reproductor from "@/components/Reproductor.vue";
 export default {
-  name: "Home"
+  name: "Home",
+  components:{
+    Reproductor,
+    Footer
+  },
+  props:{
+    data: Array,
+  }
 };
 </script>
