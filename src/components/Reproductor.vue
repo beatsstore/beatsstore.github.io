@@ -6,7 +6,7 @@
                 <h4>{{pista.nombre}}</h4>
             </td>
             <td>
-                <audio v-bind:src="pista.url" controls></audio>
+                <audio v-bind:src="pista.url" buffered controls></audio>
             </td>
             <td>
                 #precio
