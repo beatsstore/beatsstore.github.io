@@ -10,10 +10,10 @@ export default {
     return {
       divisa:[
         {
-          "nombre" : "Chaos Best",
-          "url":"Divisa/Caos_CHAOS_ULTIMATE_BEAT_CONTEST_8a8aabf812.mp3",
-          "precio": "250",
-          "linkCompra": "https://mpago.la/2jivmGP"
+          "nombre" : "GEE + Presets",
+          "url":"Divisa/GEE - DiVisa Oro.mp3",
+          "precio": "1000",
+          "linkCompra": "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=277413269-c21aad06-251c-4017-8715-9b759826d330"
         }
       ]
     }

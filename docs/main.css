@@ -1,9 +1,73 @@
+/** colores */
+
+:root {
+    --color1: #CCCCCC;
+    --color2: #AE85ED;
+    --color3: #FEB808;
+    --color4: #0F0D0E;
+    --color5: #091358;
+    --color6: #40059B;
+}
+
+.bg-color1 {
+    background: var(--color1);
+}
+
+.bg-color2 {
+    background: var(--color2);
+}
+
+.bg-color3 {
+    background: var(--color3);
+}
+
+.bg-color4 {
+    background: var(--color4);
+}
+
+.bg-color5 {
+    background: var(--color5);
+}
+
+.bg-color6 {
+    background: var(--color6);
+}
+
+.text-bg-color1 {
+    color: var(--color1);
+}
+
+.text-bg-color2 {
+    color: var(--color2);
+}
+
+.text-bg-color3 {
+    color: var(--color3);
+}
+
+.text-bg-color4 {
+    color: var(--color4);
+}
+
+.text-bg-color5 {
+    color: var(--color5);
+}
+
+.text-bg-color6 {
+    color: var(--color6);
+}
+
 html,
 body,
 main {
     font-family: 'Asap', sans-serif;
-    color: #0F0D0E;
+    color: #fff;
     height: 100%;
+    background-color: var(--color4);
+}
+
+h1 {
+    color: var(--color2);
 }
 
 .container-fluid {
@@ -41,24 +105,24 @@ main {
 
 .nav-link,
 a {
-    color: #AE85ED;
+    color: var(--color2);
 }
 
 .nav-link:hover,
 a:hover {
-    color: #40059B;
+    color: var(--color2);
 }
 
 .btn-primary {
-    background-color: #AE85ED;
-    border-color: #AE85ED;
-    transition: filter 0.2;
+    color: var(--color1);
+    background-color: var(--color6);
+    border-color: var(--color6);
 }
 
 .btn-primary:hover {
-    background-color: #40059B;
-    border-color: #40059B;
-    filter: opacity(125%);
+    color: var(--color1);
+    background-color: var(--color6);
+    border-color: var(--color6);
 }
 
 .btn-outline-primary {
