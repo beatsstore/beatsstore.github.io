@@ -1,6 +1,12 @@
 /** colores */
 
-:root {
+html,
+body,
+main {
+    font-family: 'Asap', sans-serif;
+    color: #fff;
+    height: 100%;
+    background-color: #0F0D0E;
     --color1: #CCCCCC;
     --color2: #AE85ED;
     --color3: #FEB808;
@@ -55,15 +61,6 @@
 
 .text-bg-color6 {
     color: var(--color6);
-}
-
-html,
-body,
-main {
-    font-family: 'Asap', sans-serif;
-    color: #fff;
-    height: 100%;
-    background-color: var(--color4);
 }
 
 h1 {
