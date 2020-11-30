@@ -2,102 +2,134 @@
     <main>
         <div class="container-fluid" id="cookingbeat">
           <div class="row margin-top">
-              <div class="col-sm">
-  
-              </div>
-              <div class="col-md ">
-                  <h1 class="text-center"> Cooking Beats </h1>
-                  <p>¿Donde vendo mis instrumentales?¿Hay alguna aplicación donde hacerlo?
-                      ¿Salgo ganando si uso alguno de estos sistemas? 
-                      Estas y muchas otras preguntas se escuchan en los rincones donde se reúnen los músicos y productores. </p>
-                  <p>
-                      Es por eso que nosotros estamos planificando 
-                      poner en funcionamiento una plataforma para vender 
-                      tus samples subidos a soundcloud.
-                  </p>
-                  <p>
-                      Somos <b>Cooking Beats</b> 
-                      un emprendimiento para ofrecer una solución a estos problemas, 
-                      para poder ayudar a quienes están comenzando o quienes quieren darse a conocer, y por qué no hacer amigos.
-                  </p>
-                  <p class="text-center">
-                      <router-link class="btn btn-primary align-middle" to="/sobre">Ver Mas</router-link>
-                  </p>
-              </div>
+            <div class="col-md ">
+              <h1 class="text-center"> Cooking Beats </h1>
+              <p>¿Donde vendo mis instrumentales?¿Hay alguna aplicación donde hacerlo?
+                  ¿Salgo ganando si uso alguno de estos sistemas? 
+                  Estas y muchas otras preguntas se escuchan en los rincones donde se reúnen los músicos y productores. </p>
+              <p>
+                  Somos <b>Cooking Beats</b> 
+                  un emprendimiento para ofrecer una solución a estos problemas, 
+                  para poder ayudar a quienes están comenzando o quienes quieren darse a conocer, y por qué no hacer amigos.
+              </p>
+              <p class="text-center">
+                  <router-link class="btn btn-primary align-middle" to="/sobre">Ver Mas</router-link>
+              </p>
+            </div>
+            <div class="col-sm d-none d-md-block d-lg-block d-xl-block">
+              <img src="assets/img/img1.png" alt="" width="100%">
+            </div>
           </div>
         </div>
         <div class="container-fluid" id="plataforma">
           <div class="row margin-top">
+            <div class="col-sm d-none d-md-block d-lg-block d-xl-block">
+              <img src="assets/img/img2.png" alt="" width="100%">
+            </div>
             <div class="col-sm">
-                <h1 class="text-center">
-                    Plataforma
-                </h1>
-                <p>
-                    Unos de los problemas principales que tiene mucho productores es el medio por donde vender.
-                     Otro es el registro de sus obras los cual es complicado y no hace facil la creacion de obras
-                    derivadas.
-                </p>
-                <p>
-                    Nosotros estamos pensando en todos los aspectos  legales y estamos diseñando licencias de uso, 
-                    lo cual facilita mas la venta y el uso de las pistas. 
-                </p>
-                <p>
-                    Nos gustaria que nos dejes comentarios sobre cosas que quizas te preocupan y quisieras saber si estamos al tanto. 
-                    Te dejamos nuestras redes abajo.
-                </p>
-                <p>
-                    Blog de Desarrollo
-                </p>
-              </div>
-              <div class="col-sm">
-              </div>
+              <h1 class="text-center">
+                  Plataforma
+              </h1>
+              <p>
+                  Unos de los problemas principales que tiene mucho productores es el medio por donde vender. 
+                  Otro es el registro de sus obras los cual es complicado y no hace facil la creacion de obras derivadas.
+              </p>
+              <p>
+                  Nosotros estamos pensando en todos los aspectos legales y estamos diseñando licencias de uso,
+                   lo cual facilita mas la venta y el uso de las pistas.
+              </p>
+              <p>
+                  Nos gustaria que nos dejes comentarios sobre cosas que quizas te preocupan y quisieras saber si estamos al tanto. 
+                  Te dejamos nuestras redes abajo.
+              </p>
+            </div>
           </div>
         </div>
         <div class="container-fluid" id="constribucion">
           <div class="row margin-top">
             <div class="col-sm">
               <h1 class="text-center">Constribucion</h1>
-              <ul class="nav justify-content-center text-center" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#divisa" role="tab" aria-controls="divisa"
-                    aria-selected="true">
-                      <img src="divisa.jpeg" alt="" width="100px" class="rounded-circle">
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="" data-toggle="tab" href="#franco" role="tab" aria-controls="franco" aria-selected="false">
-                      <img src="francoPerfil.jpg" alt="" width="100px" class="rounded-circle">
-                  </a>
-                </li>
-              </ul>
+              <p>Cooking Beats es un proyecto en crecimiento, y dado que todo emprendimiento necesita de apoyo para crecer.</p>
+              <p>Poder apoyar a nuestros beatmeker quienes son nuestros, revisores de la calidad del sitio, o bien siguiendo
+               y apoyando el trabajo de nuestro programador.</p>
+            </div>
+            <div class="col-sm">
+              <h3 class="text-center text-bg-color2">Equipo</h3>
+              <!-- Divisa-->
               <hr>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="divisa" role="tabpanel" aria-labelledby="franco-tab">
+              <div class="row">
+                <div class="col-sm-2 text-center">
+                  <img src="assets/img/divisa.jpg" class="rounded-circle" alt="" width="100px">
+                </div>
+                <div class="col-sm">
                   <div class="row">
-                    <p>Soy DiVisa un productor musical y beatmakers argentino, 
-                trabajo con géneros de música urbanos, espero que nos apolles :)</p>
-                    <Reproductor v-bind:data="data"></Reproductor>
+                    <h5 class="text-center">DiVisa Oro</h5>
+                  </div>
+                  <div class="row align-middle">
+                    <div class="col-1"><span class="material-icons" style="color: #fff; width: 30px">album</span></div>
+                    <div class="col"><b>Beat Meker</b></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-1"><span class="material-icons" style="color: #fff; width: 30px">place</span></div>
+                    <div class="col">Fernandez Oro, Rio Negro, Argentina</div>
                   </div>
                 </div>
-                
-                <div class="tab-pane fade" id="franco" role="tabpanel" aria-labelledby="franco-tab">Food truck fixie
-                  locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit,
-                  blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.
-                  Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum
-                  PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS
-                  salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit,
-                  sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester
-                  stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</div>
-                <!--
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Etsy mixtape
-                  wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack
-                  lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard
-                  locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify
-                  squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie
-                  etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog
-                  stumptown. Pitchfork sustainable tofu synth chambray yr.</div>
-                  -->
+                <div class="col-sm-4 ">
+                  <div class="row d-flex flex-column">
+                    <div class="col-12 d-flex justify-content-evenly" style="margin-bottom:10%">
+                      <a href="https://www.instagram.com/divisa_prod/" title="Instagram DiVisa Oro" target="_blank">
+                        <img src="assets/icon/instagram.png" width="30px" alt="">
+                      </a>
+                      <a href="https://soundcloud.com/divisa-oro" title="SoundCloud DiVisa Oro" target="_blank">
+                        <img src="assets/icon/soundcloud.png" width="30px" alt="">
+                      </a>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center align-self-end">
+                      <a href="/divisaoro" class="btn btn-primary rounded-pill" style="width:75%">Contribuir</a>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <hr>
+              <!-- Franco -->
+              <div class="row">
+                <div class="col-sm-2 text-center">
+                  <img src="assets/img/francoPerfil.jpg" class="rounded-circle" alt="" width="100px">
+                </div>
+                <div class="col-sm">
+                  <div class="row">
+                    <h5 class="text-center">Franco Zuñiga</h5>
+                  </div>
+                  <div class="row align-middle">
+                    <div class="col-1"><span class="material-icons" style="color: #fff; width: 30px">laptop</span></div>
+                    <div class="col"><b>Programador, Full Stack Dev</b></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-1"><span class="material-icons" style="color: #fff; width: 30px">place</span></div>
+                    <div class="col">Neuquen Capital, Neuquen, Argentina</div>
+                  </div>
+                </div>
+                <div class="col-sm-4 ">
+                  <div class="row d-flex flex-column">
+                    <div class="col-12 d-flex justify-content-evenly" style="margin-bottom:10%">
+                      <a href="https://www.instagram.com/franco.zuniga32/" title="Instagram de Franco Zuñiga" target="_blank">
+                        <img src="assets/icon/instagram.png" width="30px" alt="">
+                      </a>
+                      <a href="https://github.com/francoZuniga32" title="Github de Franco Zuñiga" target="_blank">
+                        <img src="assets/icon/github.png" width="30px" alt="">
+                      </a>
+                      <a href="https://cafecito.app/francozuniga" title="Cafecito de Franco Zuñiga" target="_blank">
+                        <span class="material-icons" style="color: #fff; font-size: 30px">local_cafe</span>
+                      </a>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center align-self-end">
+                      <a href="/francozuniga" class="btn btn-primary rounded-pill" style="width:75%">Contribuir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <!---->
             </div>
           </div>
         </div>
@@ -108,11 +140,10 @@
 <script>
 import Footer from "@/components/Footer.vue";
 // @ is an alias to /src
-import Reproductor from "@/components/Reproductor.vue";
+//import Reproductor from "@/components/Reproductor.vue";
 export default {
   name: "Home",
   components:{
-    Reproductor,
     Footer
   },
   props:{

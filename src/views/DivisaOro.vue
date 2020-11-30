@@ -38,19 +38,33 @@
                 Espero que mi historia les sea de ayuda para apoyar a este proyecto, que se que va a ayudar a muchas personas 
                 como yo que quieren ganarse la vida con lo que les gusta.
             </p>
-            <div class="w-75">
-                <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Fusers%2F869526019&show_artwork=true&auto_play=true&color=%2340069c"></iframe>
-            </div>
+            <h2 class="text-bg-color2">Contribucion</h2>   
+            <Reproductor v-bind:data="divisa"></Reproductor>
         </div>
     </div>
 </template>
 <script>
 import Menu from "../components/Menu.vue";
+import Reproductor from "../components/Reproductor.vue";
 
 export default {
   name: "DivisaOro",
+  data(){
+    return {
+      divisa:[
+        {
+          "nombre" : "GEE + Presets",
+          "categoria" : "",
+          "url":"Divisa/GEE - DiVisa Oro.mp3",
+          "precio": "1000",
+          "linkCompra": "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=277413269-c21aad06-251c-4017-8715-9b759826d330"
+        }
+      ]
+    }
+  },
   components:{
-    Menu
+    Menu,
+    Reproductor
   }
 }
 </script>

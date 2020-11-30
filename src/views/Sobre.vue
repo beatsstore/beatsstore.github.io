@@ -57,13 +57,11 @@
 </template>
 <script>
 import Menu from "../components/Menu.vue";
-import Footer from "@/components/Footer.vue";
 
 export default {
   name: "Sobre",
   components:{
-    Menu,
-    Footer
+    Menu
   }
 }
 </script>

@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Sobre from "../views/Sobre.vue";
 import DivisaOro from "../views/DivisaOro.vue";
 import FinalizarCompra from "../views/FinalizarCompra.vue";
+import FrancoZuniga from "../views/FrancoZuniga.vue";
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,11 @@ const routes = [{
         path: "/divisaoro",
         name: "DivisaOro",
         component: DivisaOro
+    },
+    {
+        path: "/francozuniga",
+        name: "FrancoZuniga",
+        component: FrancoZuniga
     },
     {
         path: "/finalizarcompra",
