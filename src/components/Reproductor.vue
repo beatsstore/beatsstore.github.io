@@ -3,7 +3,10 @@
     <tbody>
         <tr class="align-middle" v-for="(pista, i) in data" v-bind:key="i">
             <td>
-                <h5>{{pista.nombre}}</h5>
+              <h5>{{pista.nombre}}</h5>
+            </td>
+            <td>
+              <h6>{{ pista.categoria }}</h6>
             </td>
             <td>
                 <audio v-bind:src="pista.url" buffered controls controlsList="nodownload"></audio>

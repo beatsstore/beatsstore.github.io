@@ -121,6 +121,9 @@
                       <a href="https://cafecito.app/francozuniga" title="Cafecito de Franco Zuñiga" target="_blank">
                         <span class="material-icons" style="color: #fff; font-size: 30px">local_cafe</span>
                       </a>
+                      <a href="https://twitter.com/FrancoAgustnOj1" title="Twiter Franco Zuniga" target="_blank">
+                        <img src="assets/icon/twitter.png" width="30px" alt="">
+                      </a>
                     </div>
                     <div class="col-12 d-flex justify-content-center align-self-end">
                       <a href="/francozuniga" class="btn btn-primary rounded-pill" style="width:75%">Contribuir</a>
