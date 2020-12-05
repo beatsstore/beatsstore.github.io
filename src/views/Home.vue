@@ -17,7 +17,7 @@
               </p>
             </div>
             <div class="col-sm d-none d-md-block d-lg-block d-xl-block">
-              <img src="assets/img/img1.png" alt="" width="100%">
+              <img src="path20.png" alt="" width="100%">
             </div>
           </div>
         </div>
